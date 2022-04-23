@@ -14,3 +14,10 @@
 
     --font-weight-main: 500;
 }
+
+@mixin fonts ($fs,$ff,$lh) {
+    font-size: $fs;
+    font-weight: $ff;
+    line-height: $lh;
+    
+}

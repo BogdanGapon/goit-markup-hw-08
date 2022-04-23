@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Work 7</title>
+    <title>Home Work 8</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,43 +23,99 @@
   <body>
     <header class="header">
       <div class="container header-container">
-        <div class="logo-wrapper">
-          <a href="" class="logo-wrapper__header-logo"
-            ><span class="logo-wrapper__logo-span">Web</span>Studio</a
-          >
-          <nav>
-            <ul class="marker-list header-list">
-              <li class="marker-list__item"><a class="nav-link current" href="">Студия</a></li>
-              <li class="marker-list__item">
-                <a class="nav-link" href="./porfolio.html">Портфолио</a>
+        <a href="" class="container__logo">
+          Web<span class="container__logo_span container__logo_span-black">Studio</span></a
+        >
+        <button class="open-burger-btn" type="button" data-menu-open>
+          <svg class="open-burger-btn__burger-icon" width="40" height="40">
+            <use href="./images/symbol-defs.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
+        <nav class="nav-menu">
+          <ul class="marker-list header-list">
+            <li class="marker-list__item"><a class="nav-link current" href="">Студия</a></li>
+            <li class="marker-list__item">
+              <a class="nav-link" href="./porfolio.html">Портфолио</a>
+            </li>
+            <li class="marker-list__item"><a class="nav-link" href="">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <ul class="marker-list header-list-contact">
+          <li class="marker-list__contact-item">
+            <a class="contact-link" href="mailto:info@devstudio.com">
+              <svg class="contact-link__icon-header-mail" width="16" height="12">
+                <use href="./images/symbol-defs.svg#header-icon1"></use></svg
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="marker-list__contact-item">
+            <a class="contact-link" href="tel:+380961111111">
+              <svg class="contact-link__icon-header-mail" width="10" height="16">
+                <use href="./images/symbol-defs.svg#header-icon2"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="burger-menu is-open" data-menu>
+        <div class="container mobile-menu__container">
+          <button class="burger-menu__close_btn" data-menu-close>
+            <svg class="burger-menu__svg" width="40" height="40">
+              <use href="./images/symbol-defs.svg#close-icon"></use>
+            </svg>
+          </button>
+          <nav class="nav-burger-menu">
+            <ul class="burger-nav-list">
+              <li class="burger-nav-list__marker-list">
+                <a class="burger-nav-list__link current" href="">Студия</a>
               </li>
-              <li class="marker-list__item"><a class="nav-link" href="">Контакты</a></li>
+              <li class="burger-nav-list__marker-list">
+                <a class="burger-nav-list__link" href="./porfolio.html">Портфолио</a>
+              </li>
+              <li class="burger-nav-list__marker-list">
+                <a class="burger-nav-list__link" href="">Контакты</a>
+              </li>
             </ul>
           </nav>
-          <ul class="marker-list header-list-contact">
-            <li class="marker-list__contact-item">
-              <a class="contact-link" href="mailto:info@devstudio.com">
-                <svg class="contact-link__icon-header-mail" width="16" height="12">
-                  <use href="./images/symbol-defs.svg#header-icon1"></use></svg
-                >info@devstudio.com</a
-              >
+          <address>
+            <ul class="burger-adress-list">
+              <li class="burger-adress-list__item">
+                <a class="burger-adress-list__adress-link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="burger-adress-list__item">
+                <a class="burger-adress-list__mail-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="burger-social-link-list">
+            <li class="burger-social-link-list__item">
+              <a class="burger-social-link-list_link" href="">Instagram</a>
             </li>
-            <li class="marker-list__contact-item">
-              <a class="contact-link" href="tel:+380961111111">
-                <svg class="contact-link__icon-header-mail" width="10" height="16">
-                  <use href="./images/symbol-defs.svg#header-icon2"></use>
-                </svg>
-                +38 096 111 11 11
-              </a>
+            <li class="burger-social-link-list__item">
+              <a class="burger-social-link-list_link" href="">Twitter</a>
+            </li>
+            <li class="burger-social-link-list__item">
+              <a class="burger-social-link-list_link" href="">Facebook</a>
+            </li>
+            <li class="burger-social-link-list__item">
+              <a class="burger-social-link-list_link" href="">LinkedIn</a>
             </li>
           </ul>
         </div>
       </div>
     </header>
-    <main>
-      <!-- SECTION HERO START -->
+
+    <!-- SECTION HERO START -->
+       
+    <main> 
       <section class="hero-section">
-        <div class="container">
+        <div class="container hero__container">
           <h1 class="container__main-title">
             Эффективные решения <br />
             для вашего бизнеса
@@ -69,65 +125,72 @@
           </button>
         </div>
       </section>
-      <!-- SECTION HERO END -->
-      <!-- SECTION OPPORTUNITIES START -->
-      <section class="section">
-        <div class="container">
+
+    <!-- SECTION HERO END -->
+
+    <!-- SECTION OPPORTUNITIES START -->
+
+     <section class="section-opportunities">
+        <div class="container section-opportunities__container">
           <h2 class="visually-hidden">Наши преимущества</h2>
-          <ul class="marker-list list-box">
-            <li class="list-box__item">
+          <ul class="section-opportunities-list">
+            <li class="section-opportunities-list__marker-list">
               <div class="list-box__icon-wrapper">
                 <svg class="list-box__icon-section-opportunities" width="70" height="70">
                   <use href="./images/symbol-defs.svg#opportunites-icon1"></use>
                 </svg>
               </div>
-              <h3 class="list-box__small-title">Внимание к деталям</h3>
-              <p class="list-box__text-title">
+              <h3 class="section-opportunities-list__title">Внимание к деталям</h3>
+              <p class="section-opportunities-list___text">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
 
-            <li class="list-box__item">
+            <li class="section-opportunities-list__marker-list">
               <div class="list-box__icon-wrapper">
                 <svg class="list-box__icon-section-opportunities" width="70" height="70">
                   <use href="./images/symbol-defs.svg#opportunites-icon2"></use>
                 </svg>
               </div>
-              <h3 class="list-box__small-title">Пунктуальность</h3>
-              <p class="list-box__text-title">
+              <h3 class="section-opportunities-list__title">Пунктуальность</h3>
+              <p class="section-opportunities-list___text">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
 
-            <li class="list-box__item">
+            <li class="section-opportunities-list__marker-list">
               <div class="list-box__icon-wrapper">
                 <svg class="list-box__icon-section-opportunities" width="70" height="70">
                   <use href="./images/symbol-defs.svg#opportunites-icon3"></use>
                 </svg>
               </div>
-              <h3 class="list-box__small-title">Планирование</h3>
-              <p class="list-box__text-title">
+              <h3 class="section-opportunities-list__title">Планирование</h3>
+              <p class="section-opportunities-list___text">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
 
-            <li class="item">
+            <li class="section-opportunities-list__marker-list">
               <div class="list-box__icon-wrapper">
                 <svg class="list-box__icon-section-opportunities" width="70" height="70">
                   <use href="./images/symbol-defs.svg#opportunites-icon4"></use>
                 </svg>
               </div>
-              <h3 class="list-box__small-title">Современные технологии</h3>
-              <p class="list-box__text-title">
+              <h3 class="section-opportunities-list__title">Современные технологии</h3>
+              <p class="section-opportunities-list___text">
                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
               </p>
             </li>
+            
           </ul>
         </div>
       </section>
+
       <!-- SECTION OPPORTUNITIES END -->
-      <!-- SECTION ABOUT US START -->
-      <section class="section section-about-us">
+
+    <!-- SECTION ABOUT US START -->
+    <!-- 
+    <section class="section section-about-us">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="marker-list flex-box-img">
@@ -169,10 +232,13 @@
             </li>
           </ul>
         </div>
-      </section>
-      <!-- SECTION ABOUT US END -->
-      <!-- SECTION COMMAND START -->
-      <section class="section section-command">
+      </section>  -->
+
+    <!-- SECTION ABOUT US END -->
+
+    <!-- SECTION COMMAND START -->
+
+    <!-- <section class="section section-command">
         <div class="container">
           <h2 class="section-title title-our-command">Наша команда</h2>
           <ul class="marker-list flex-box-pic">
@@ -294,10 +360,12 @@
             </li>
           </ul>
         </div>
-      </section>
-      <!-- SECTION COMMAND END -->
-      <!-- SECTION CLIENTS START -->
-      <section class="section-clients">
+      </section> -->
+    <!-- SECTION COMMAND END -->
+
+    <!-- SECTION CLIENTS START -->
+
+    <!-- <section class="section-clients">
         <div class="container">
           <h2 class="section-title title-clients">Постоянные клиенты</h2>
           <ul class="list-icon">
@@ -346,12 +414,11 @@
           </ul>
         </div>
       </section>
-
-      <!-- SECTION CLIENTS END-->
-    </main>
+    </main> -->
+    <!-- SECTION CLIENTS END-->
 
     <!-- FOOTER START -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-flex-container">
         <div class="link-wrapper">
           <a href="" class="footer-logo"><span class="logo-span">Web</span>Studio</a>
@@ -427,14 +494,14 @@
           </button>
         </form>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- FOOTER END -->
 
     <!-- BACKDROP START -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="btn-modal" type="button" data-modal-close>
+        <button class="close-btn-modal" type="button" data-modal-close>
           <svg class="modal-close-icon" width="18" height="18">
             <use href="./images/symbol-defs.svg#close-icon"></use>
           </svg>
@@ -494,5 +561,6 @@
     </div>
     <!-- BACKDROP EMD -->
     <script src="./js/modal.js"></script>
+    <script src="./js/burger.js"></script>
   </body>
 </html>

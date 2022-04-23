@@ -23,6 +23,11 @@
     letter-spacing: 0.03em;
 
     color: #212121;
+
+@media screen and (min-width:768px) {
+line-height: 1.30;   
+}
+
 }
 
 .modal-form-label {
@@ -97,10 +102,15 @@
 .modal-form-checkbox-label {
     display: flex;
     align-items: center;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #757575;
+
+@media screen and (min-width:1200px) {
+font-size: 14px;
+
+}
 
 &::before {
     display: inline-block;
@@ -128,7 +138,7 @@
 }
 
 .modal-link-policy {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     text-decoration-line: underline;
@@ -140,6 +150,12 @@
 &:focus {
     color: #1675c2;
 }
+
+@media screen and (min-width:1200px) {
+font-size: 14px;
+
+}
+
 }
 
 .modal-form-button {
