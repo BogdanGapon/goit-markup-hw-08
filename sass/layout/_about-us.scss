@@ -1,0 +1,53 @@
+.section-about-us {
+    padding-top: 0;
+}
+
+.flex-box-img {
+    display: flex;
+    margin-left: -30px;
+    margin-top: -30px;
+
+    flex-basis: calc((100% - 90px) / 4);
+}
+
+.flex-box-img .item {
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.box-computer-img {
+    position: relative;
+
+}
+
+.text-on-img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    height: 70px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: white;
+    background: rgba(47, 48, 58, 0.8);
+
+
+}
+
+.section-title {
+    margin-bottom: 50px;
+
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: var(--dark-color);
+}

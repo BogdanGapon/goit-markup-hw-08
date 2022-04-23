@@ -1,0 +1,112 @@
+.header {
+    border-bottom: 1px solid #ececec;
+}
+
+header a {
+    padding: 24px 0px;
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.logo-wrapper__header-logo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.19;
+    text-decoration: none;
+    color: var(--dark-color);
+    margin-right: 93px;
+
+    transition: text-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+&:hover,
+&:focus {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+}
+
+.logo-wrapper__logo-span {
+    color: var(--hover-color);
+}
+
+.header-list {
+    display: flex;
+
+& > .marker-list__item:not(:last-child) {
+    margin-right: 50px;
+}
+}
+
+.marker-list .nav-link {
+    position: relative;
+    padding-bottom: 32px;
+
+    font-size: var(--font-text);
+    font-weight: var(--font-weight-main);
+    line-height: 1.14;
+    text-decoration: none;
+    color: var(--dark-color);
+    letter-spacing: 0.02em;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+&:hover,
+&:focus {
+    color: var(--hover-color);
+}
+}
+
+
+
+.marker-list .current {
+    color: var(--hover-color);
+
+&::after {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #2196F3;
+    border-radius: 2px;
+}
+}
+
+.header-list-contact>.marker-list__contact-item:first-child {
+    margin-right: 50px;
+}
+
+.header-list-contact {
+    display: flex;
+    margin-left: auto;
+}
+
+.contact-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-text);
+    font-weight: var(--font-weight-main);
+    line-height: 1.14;
+    text-decoration: none;
+    color: var(--main-color);
+    font-style: normal;
+    letter-spacing: 0.02em;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+&:hover,
+&:focus {
+    color: var(--hover-color);
+}
+}
+
+.contact-link__icon-header-mail {
+    margin-right: 10px;
+    fill: currentColor;
+}
