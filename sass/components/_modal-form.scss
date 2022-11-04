@@ -34,22 +34,31 @@ line-height: 1.30;
     position: relative;
     display: block;
     margin-bottom: 4px;
-
+  
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
     color: #757575;
+
+&:not(:first-child) {
+margin-top: 10px;
+
+}
+
 }
 
 .icon-wrapper {
-    position: relative;
+display: block;
+position: relative;
 
 }
 
 .modal-icon {
     position: absolute;
-    top: 50%;
+    top:50%;
     transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     left: 12px;
 
 .modal-form-input:focus + & {
@@ -183,3 +192,112 @@ font-size: 14px;
 }
 
 }
+
+// Накидал для удобства пр использовании телефона
+
+
+@media screen and (max-width:767px) {
+
+.modal {
+width: 420px;
+height: 480px;
+padding: 20px 24px;
+
+}
+
+.title-modal-form {
+font-size: 14px;
+line-height: 1.16;
+margin-bottom: 8px;
+
+}
+
+.textarea-form {
+height: 75px;
+}
+
+.checkbox-modal-wrapper {
+margin-bottom: 20px;
+}
+
+
+.modal-form-label {
+
+margin-bottom: 3px;
+font-size: 10px;
+
+}
+}
+
+@media screen and (max-width:460px) {
+
+.modal {
+width: 320px;
+height: 400px;
+padding: 10px 14px; 
+}
+    
+.modal-form-input {
+display: block;
+width: 100%;
+height: 26px;
+padding: 9px 11px;
+padding-left: 32px;
+outline: none;
+border: 1px solid rgba(33,33,33,.2);
+border-radius: 4px;
+font-size: 12px;
+}
+
+
+.close-btn-modal {
+width: 22px;
+height: 22px;
+
+}
+
+.modal-close-icon {
+width: 10px;
+height: 10px;
+
+}
+
+.title-modal-form {
+font-size: 11px;
+line-height: 1.16;
+margin-bottom: 8px;  
+}
+    
+.textarea-form {
+height: 50px;
+padding-left: 12px;
+
+&::placeholder {
+font-size: 10px;
+
+}
+}
+
+.modal-form-checkbox-label {
+font-size: 9px;
+line-height: 1.31;
+}
+
+.modal-link-policy {
+font-size: 9px;
+line-height: 1.31;
+
+}
+
+
+.modal-form-button {
+    width: 120px;
+    height: 40px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.21;
+    letter-spacing: .06em;
+
+}
+
+    }

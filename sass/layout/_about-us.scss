@@ -1,5 +1,16 @@
+
+@media screen and (max-width:1199px) {
+
+
+.section.section-about-us {
+display: none;
+}
+
+}
+
 .section-about-us {
-    padding-top: 0;
+padding-top: 94px;
+padding-bottom: 94px;
 }
 
 .flex-box-img {
@@ -16,8 +27,7 @@
 }
 
 .box-computer-img {
-    position: relative;
-
+position: relative;
 }
 
 .text-on-img {
