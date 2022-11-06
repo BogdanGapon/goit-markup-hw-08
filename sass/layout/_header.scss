@@ -124,9 +124,16 @@
     }
   }
 
+  .burger-menu-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+  }
+
   .nav-burger-menu {
     padding-top: 48px;
-    margin-bottom: 302px;
   }
 
   .burger-nav-list__marker-list:first-child {

@@ -200,9 +200,23 @@ li {
   .burger-menu__close_btn:hover .burger-menu__svg {
     fill: var(--hover-color);
   }
+  .burger-menu-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100vh;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   .nav-burger-menu {
     padding-top: 48px;
-    margin-bottom: 302px;
   }
   .burger-nav-list__marker-list:first-child {
     margin-bottom: 36px;
