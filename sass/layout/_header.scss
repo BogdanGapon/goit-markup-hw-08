@@ -38,6 +38,7 @@
 .burger-social-link-list_link {
   @include fonts(18px, 500, 1.16);
   color: var(--hover-color);
+  font-style: normal;
 
   &::after {
     content: ' ';
