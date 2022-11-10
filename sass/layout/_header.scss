@@ -80,7 +80,6 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    padding-left: 40px;
     padding-bottom: 38px;
     overflow: auto;
     background: #ffffff;
@@ -104,6 +103,7 @@
 
   .mobile-menu__container {
     position: relative;
+    padding-left: 40px;
   }
 
   .burger-menu__close_btn {
